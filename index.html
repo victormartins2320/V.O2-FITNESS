@@ -10,9 +10,6 @@
   <meta name="keywords" content="Academia V.O2 Fitness, Sapezal MT, Musculação Sapezal, Cross Training Sapezal, Academia Sapezal, Planos V.O2 Fitness">
   <meta name="robots" content="index, follow">
   
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +26,13 @@
   <header class="header">
     <div class="container nav-wrapper">
       <a href="#home" class="logo-brand">
-        <img src="assets/images/logo.jpg" alt="Logotipo Academia V.O2 Fitness Sapezal">
+        <!-- Logo Vetorial Inline SVG (Funciona em qualquer hospedagem/GitHub sem pasta assets) -->
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" fill="#0B0E0C" stroke="#22c55e" stroke-width="3"/>
+          <path d="M50 15 L78 32 L78 68 L50 85 L22 68 L22 32 Z" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.6"/>
+          <path d="M30 50 L42 50 M58 50 L70 50 M42 42 L42 58 M58 42 L58 58 M36 44 L36 56 M64 44 L64 56 M47 35 L53 65" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+          <circle cx="50" cy="50" r="4" fill="#39FF14"/>
+        </svg>
         <div class="logo-text">
           V.O2 FITNESS
           <span>SAPEZAL - MT</span>
@@ -65,7 +68,11 @@
        HERO / APRESENTAÇÃO OFICIAL
        ========================================================================== -->
   <section class="hero" id="home">
-    <img src="assets/images/hero_bg.jpg" alt="Infraestrutura da Academia V.O2 Fitness" class="hero-bg">
+    <!-- Imagem de Fundo CDN + Fallback Local -->
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" 
+         onerror="this.onerror=null; this.src='assets/images/hero_bg.jpg';"
+         alt="Infraestrutura da Academia V.O2 Fitness Sapezal" 
+         class="hero-bg">
     <div class="hero-overlay"></div>
 
     <div class="container">
@@ -179,7 +186,9 @@
 
         <div class="about-image-wrapper">
           <div class="about-image-card">
-            <img src="assets/images/musculacao.jpg" alt="Instalações da Academia V.O2 Fitness Sapezal">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1000&auto=format&fit=crop" 
+                 onerror="this.onerror=null; this.src='assets/images/musculacao.jpg';"
+                 alt="Instalações da Academia V.O2 Fitness Sapezal">
             <div class="about-card-badge">
               <div class="about-badge-icon">
                 <svg viewBox="0 0 24 24">
@@ -252,7 +261,9 @@
         <!-- Musculação -->
         <div class="modality-card">
           <div class="modality-img-box">
-            <img src="assets/images/musculacao.jpg" alt="Modalidade Musculação V.O2 Fitness">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1000&auto=format&fit=crop" 
+                 onerror="this.onerror=null; this.src='assets/images/musculacao.jpg';"
+                 alt="Modalidade Musculação V.O2 Fitness">
           </div>
 
           <div class="modality-body">
@@ -293,7 +304,9 @@
         <!-- Cross Training -->
         <div class="modality-card">
           <div class="modality-img-box">
-            <img src="assets/images/cross_training.jpg" alt="Modalidade Cross Training V.O2 Fitness">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1000&auto=format&fit=crop" 
+                 onerror="this.onerror=null; this.src='assets/images/cross_training.jpg';"
+                 alt="Modalidade Cross Training V.O2 Fitness">
           </div>
 
           <div class="modality-body">
@@ -569,7 +582,6 @@
         </div>
 
         <div class="map-wrapper">
-          <!-- Google Maps Embed for Sapezal, MT -->
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31062.29828479262!2d-58.7758364!3d-13.5471415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a1c8db18ed5a2f%3A0x6b80327fbc16ef7b!2sSapezal%2C%20MT%2C%2078365-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
             allowfullscreen="" 
@@ -590,7 +602,12 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#home" class="logo-brand">
-            <img src="assets/images/logo.jpg" alt="Logo Academia V.O2 Fitness Sapezal">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="46" fill="#0B0E0C" stroke="#22c55e" stroke-width="3"/>
+              <path d="M50 15 L78 32 L78 68 L50 85 L22 68 L22 32 Z" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.6"/>
+              <path d="M30 50 L42 50 M58 50 L70 50 M42 42 L42 58 M58 42 L58 58 M36 44 L36 56 M64 44 L64 56 M47 35 L53 65" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+              <circle cx="50" cy="50" r="4" fill="#39FF14"/>
+            </svg>
             <div class="logo-text">
               V.O2 FITNESS
               <span>SAPEZAL - MT</span>

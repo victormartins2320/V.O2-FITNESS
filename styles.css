@@ -225,11 +225,11 @@ button, input, select, textarea {
   gap: 0.75rem;
 }
 
-.logo-brand img {
+.logo-brand img,
+.logo-svg {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  border: 1px solid var(--brand-green-accent);
 }
 
 .logo-text {
