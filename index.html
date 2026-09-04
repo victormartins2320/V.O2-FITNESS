@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Academia V.O2 Fitness Sapezal | Site Oficial</title>
+  <meta name="description" content="Site oficial da Academia V.O2 Fitness Sapezal - MT. Centro especializado em Musculação e Cross Training. Conheça nossa estrutura, horários, planos e faça sua pré-matrícula.">
+  <meta name="keywords" content="Academia V.O2 Fitness, Sapezal MT, Musculação Sapezal, Cross Training Sapezal, Academia Sapezal, Planos V.O2 Fitness">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER INSTITUCIONAL
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo-brand">
+        <img src="assets/images/logo.jpg" alt="Logotipo Academia V.O2 Fitness Sapezal">
+        <div class="logo-text">
+          V.O2 FITNESS
+          <span>SAPEZAL - MT</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Início</a></li>
+          <li><a href="#empresa">A Empresa</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#horarios">Horários</a></li>
+          <li><a href="#planos">Planos & Valores</a></li>
+          <li><a href="#localizacao">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#pre-cadastro" class="btn btn-primary" style="padding: 0.65rem 1.3rem; font-size: 0.9rem;">
+          Pré-Matrícula
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu de Navegação">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO / APRESENTAÇÃO OFICIAL
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <img src="assets/images/hero_bg.jpg" alt="Infraestrutura da Academia V.O2 Fitness" class="hero-bg">
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          <text>SITE OFICIAL INSTITUCIONAL — SAPEZAL, MT</text>
+        </div>
+
+        <h1 class="heading-lg hero-title">
+          ACADEMIA V.O2 FITNESS <br>
+          <span class="text-accent">MUSCULAÇÃO & CROSS TRAINING</span>
+        </h1>
+
+        <p class="hero-description">
+          Bem-vindo ao portal oficial da Academia V.O2 Fitness Sapezal. Oferecemos um ambiente estruturado com equipamentos de ponta, orientação profissional habilitada e modalidades desenvolvidas para a sua evolução física e saúde.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#planos" class="btn btn-primary">
+            Conhecer Planos & Valores
+          </a>
+
+          <a href="#pre-cadastro" class="btn btn-secondary">
+            Iniciar Pré-Matrícula Online
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 6.29 3.43 2 7.71 3.43 9.14 2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22 14.86 20.57 16.29 22 17.71 20.57 22 16.29 20.57 14.86z"/>
+              </svg>
+            </div>
+            <div class="hero-feature-text">
+              <strong>Musculação Biomecânica</strong>
+              <span>Equipamentos de alta precisão</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M13.5 0.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8c0-4.66-2.52-8.32-6.5-13.33z"/>
+              </svg>
+            </div>
+            <div class="hero-feature-text">
+              <strong>Cross Training Box</strong>
+              <span>Treinamento funcional completo</span>
+            </div>
+          </div>
+
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+              </svg>
+            </div>
+            <div class="hero-feature-text">
+              <strong>Horário Estendido</strong>
+              <span>Abertura oficial às 05:00h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       A EMPRESA (QUEM SOMOS)
+       ========================================================================== -->
+  <section class="about-section" id="empresa">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            Sobre a V.O2 Fitness
+          </div>
+
+          <h2 class="heading-md">
+            COMPROMISSO COM A SAÚDE E <span class="text-accent">PERFORMANCE FÍSICA</span>
+          </h2>
+
+          <p class="about-p">
+            A <strong>Academia V.O2 Fitness Sapezal</strong> foi criada com o objetivo de oferecer à comunidade de Sapezal - MT um centro esportivo completo, unindo a prática da musculação tradicional e o dinamismo do Cross Training.
+          </p>
+
+          <p class="about-p">
+            Nossa estrutura física prioriza a ergonomia, a segurança dos praticantes e o acompanhamento por educadores físicos qualificados, capacitados para prescrever treinos alinhados aos objetivos de cada aluno.
+          </p>
+
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Anos de Atuação</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">+1.2k</div>
+              <div class="stat-label">Alunos Atendidos</div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Profissionais Habilitados</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image-wrapper">
+          <div class="about-image-card">
+            <img src="assets/images/musculacao.jpg" alt="Instalações da Academia V.O2 Fitness Sapezal">
+            <div class="about-card-badge">
+              <div class="about-badge-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+                </svg>
+              </div>
+              <div>
+                <strong style="display: block; font-family: var(--font-heading); text-transform: uppercase; font-size: 1.05rem;">Corpo Técnico Qualificado</strong>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">Suporte técnico na prescrição e orientação dos treinos.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HORÁRIOS DE FUNCIONAMENTO
+       ========================================================================== -->
+  <section class="schedule-banner-section" id="horarios">
+    <div class="container">
+      <div class="schedule-card-wrapper">
+        <div class="schedule-info-title">
+          <div class="section-tag">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+            Quadro de Horários
+          </div>
+          <h3>Horários de <span class="text-accent">Funcionamento</span></h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">
+            Abertura diária logo no início da manhã para atender sua rotina de treinos.
+          </p>
+        </div>
+
+        <div class="schedule-table-grid">
+          <div class="schedule-item">
+            <strong>Segunda a Sexta</strong>
+            <span>05:00h às 22:00h</span>
+          </div>
+
+          <div class="schedule-item">
+            <strong>Sábados</strong>
+            <span>08:00h às 16:00h</span>
+          </div>
+
+          <div class="schedule-item">
+            <strong>Domingos / Feriados</strong>
+            <span style="color: var(--text-muted); font-size: 1.1rem;">Fechado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODALIDADES OFERECIDAS
+       ========================================================================== -->
+  <section class="modalidades-section" id="modalidades">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Modalidades Esportivas
+        </div>
+        <h2 class="heading-md">PROGRAMAS DE <span class="text-accent">TREINAMENTO</span></h2>
+        <p class="section-subtitle">Conheça as duas modalidades oferecidas em nossa unidade de Sapezal.</p>
+      </div>
+
+      <div class="modalidades-grid">
+        <!-- Musculação -->
+        <div class="modality-card">
+          <div class="modality-img-box">
+            <img src="assets/images/musculacao.jpg" alt="Modalidade Musculação V.O2 Fitness">
+          </div>
+
+          <div class="modality-body">
+            <div class="modality-header">
+              <div class="modality-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 6.29 3.43 2 7.71 3.43 9.14 2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22 14.86 20.57 16.29 22 17.71 20.57 22 16.29 20.57 14.86z"/>
+                </svg>
+              </div>
+              <h3 class="heading-sm">Musculação</h3>
+            </div>
+
+            <p class="modality-desc">
+              Treinamento contra-resistência voltado para hipertrofia, ganho de força, condicionamento e reabilitação postural.
+            </p>
+
+            <ul class="modality-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Equipamentos biomecânicos e zona de peso livre
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Fichas de treino orientadas por objetivo
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Supervisão de instrutores durante o horário de treino
+              </li>
+            </ul>
+
+            <a href="#planos" class="btn btn-secondary" style="width: 100%;">
+              Consultar Planos de Musculação
+            </a>
+          </div>
+        </div>
+
+        <!-- Cross Training -->
+        <div class="modality-card">
+          <div class="modality-img-box">
+            <img src="assets/images/cross_training.jpg" alt="Modalidade Cross Training V.O2 Fitness">
+          </div>
+
+          <div class="modality-body">
+            <div class="modality-header">
+              <div class="modality-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M13.5 0.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8c0-4.66-2.52-8.32-6.5-13.33z"/>
+                </svg>
+              </div>
+              <h3 class="heading-sm">Cross Training</h3>
+            </div>
+
+            <p class="modality-desc">
+              Treinamento funcional coletivo de alta intensidade focado em capacidade cardiorrespiratória e agilidade.
+            </p>
+
+            <ul class="modality-list">
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Box equipado com rig metálico, kettlebells e barras
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Aulas em grupo com agendamento e turmas
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Desenvolvimento completo de resistência física
+              </li>
+            </ul>
+
+            <a href="#planos" class="btn btn-secondary" style="width: 100%;">
+              Consultar Planos de Cross
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PLANOS E VALORES
+       ========================================================================== -->
+  <section class="plans-section" id="planos">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V12h16v6zm0-10H4V6h16v2z"/></svg>
+          Tabela Institucional
+        </div>
+        <h2 class="heading-md">PLANOS & <span class="text-accent">VALORES</span></h2>
+        <p class="section-subtitle">Confira as opções de adesão. *(Valores informativos a confirmar na recepção)</p>
+      </div>
+
+      <div class="plans-grid">
+        <!-- Plano Mensal -->
+        <div class="plan-card">
+          <h3 class="plan-name">Plano Mensal</h3>
+          <p class="plan-subtitle">Adesão sem contrato de fidelização.</p>
+
+          <div class="plan-price-box">
+            <div class="plan-price">R$ 149<span style="font-size: 1.6rem;">,90</span> <span>/mês</span></div>
+            <div class="plan-notice">*Valor base estimado</div>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Acesso à sala de Musculação
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Horário livre de funcionamento
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Elaboração da ficha de treino
+            </li>
+          </ul>
+
+          <a href="#pre-cadastro" class="btn btn-secondary btn-select-plan" data-plan="Plano Mensal" style="width: 100%;">
+            Selecionar Plano Mensal
+          </a>
+        </div>
+
+        <!-- Plano Trimestral -->
+        <div class="plan-card featured">
+          <h3 class="plan-name">Plano Trimestral</h3>
+          <p class="plan-subtitle">Plano recorrente com benefício de valor.</p>
+
+          <div class="plan-price-box">
+            <div class="plan-price">R$ 129<span style="font-size: 1.6rem;">,90</span> <span>/mês</span></div>
+            <div class="plan-notice">*Pagamento no ciclo trimestral</div>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Acesso Musculação + Cross Training
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Desconto proporcional na mensalidade
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Reavaliação periódica da rotina de treinos
+            </li>
+          </ul>
+
+          <a href="#pre-cadastro" class="btn btn-primary btn-select-plan" data-plan="Plano Trimestral" style="width: 100%;">
+            Selecionar Trimestral
+          </a>
+        </div>
+
+        <!-- Plano Anual -->
+        <div class="plan-card">
+          <h3 class="plan-name">Plano Anual</h3>
+          <p class="plan-subtitle">Contrato de adesão anual continuada.</p>
+
+          <div class="plan-price-box">
+            <div class="plan-price">R$ 99<span style="font-size: 1.6rem;">,90</span> <span>/mês</span></div>
+            <div class="plan-notice">*Condição de menor taxa mensal</div>
+          </div>
+
+          <ul class="plan-features">
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Acesso ilimitado às modalidades
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Opção de trancamento por até 30 dias
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              Maior previsibilidade de investimento
+            </li>
+          </ul>
+
+          <a href="#pre-cadastro" class="btn btn-secondary btn-select-plan" data-plan="Plano Anual" style="width: 100%;">
+            Selecionar Plano Anual
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FORMULÁRIO DE PRÉ-MATRÍCULA
+       ========================================================================== -->
+  <section class="form-section" id="pre-cadastro">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+          Atendimento On-line
+        </div>
+        <h2 class="heading-md">SOLICITAÇÃO DE <span class="text-accent">PRÉ-MATRÍCULA</span></h2>
+        <p class="section-subtitle">Preencha o formulário institucional para encaminhar suas informações à nossa equipe de atendimento.</p>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="cadastroForm">
+          <div class="form-grid">
+            <!-- Nome Completo -->
+            <div class="form-group full-width">
+              <label for="form-nome">Nome Completo <span>*</span></label>
+              <input type="text" id="form-nome" class="form-control" placeholder="Informe seu nome completo" required>
+            </div>
+
+            <!-- Telefone / WhatsApp -->
+            <div class="form-group full-width">
+              <label for="form-telefone">Telefone / WhatsApp <span>*</span></label>
+              <input type="tel" id="form-telefone" class="form-control" placeholder="(65) 99999-9999" required>
+            </div>
+
+            <!-- Modalidade -->
+            <div class="form-group">
+              <label for="form-modalidade">Modalidade de Interesse</label>
+              <select id="form-modalidade" class="form-control">
+                <option value="Musculação">Musculação</option>
+                <option value="Cross Training">Cross Training</option>
+                <option value="Musculação + Cross Training (Ambos)">Musculação + Cross (Ambos)</option>
+              </select>
+            </div>
+
+            <!-- Plano Escolhido -->
+            <div class="form-group">
+              <label for="form-plano">Plano de Interesse</label>
+              <select id="form-plano" class="form-control">
+                <option value="Plano Mensal">Plano Mensal</option>
+                <option value="Plano Trimestral">Plano Trimestral</option>
+                <option value="Plano Anual">Plano Anual</option>
+              </select>
+            </div>
+
+            <!-- Turno Preferencial -->
+            <div class="form-group">
+              <label for="form-turno">Turno Preferencial de Treino</label>
+              <select id="form-turno" class="form-control">
+                <option value="Manhã (05h00 às 12h00)">Manhã (05h00 às 12h00)</option>
+                <option value="Tarde (12h00 às 18h00)">Tarde (12h00 às 18h00)</option>
+                <option value="Noite (18h00 às 22h00)">Noite (18h00 às 22h00)</option>
+              </select>
+            </div>
+
+            <!-- Nível de Experiência -->
+            <div class="form-group">
+              <label for="form-experiencia">Prática Anterior de Atividade Física</label>
+              <select id="form-experiencia" class="form-control">
+                <option value="Iniciante">Iniciante (Primeira vez em academia)</option>
+                <option value="Intermediário">Intermediário (Praticava anteriormente)</option>
+                <option value="Avançado">Avançado (Praticante frequente)</option>
+              </select>
+            </div>
+
+            <!-- Botão de Envio -->
+            <div class="form-group full-width">
+              <button type="submit" class="btn btn-primary form-submit-btn">
+                <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.03 14.69 2 12.04 2zm5.8 14.18c-.24.68-1.2 1.25-1.95 1.41-.51.11-1.18.2-3.44-.74-2.88-1.19-4.74-4.13-4.88-4.32-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .39.01.56.01.18 0 .42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.31.31-.13.62.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.15.49.13.67-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.71-.15.29.11 1.86.88 2.18 1.04.32.16.53.24.61.38.08.14.08.81-.16 1.49z"/>
+                </svg>
+                Encaminhar Pré-Matrícula via WhatsApp
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="form-disclaimer">
+          🔒 As informações serão transmitidas de forma segura para o atendimento oficial da Academia V.O2 Fitness Sapezal.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCALIZAÇÃO E CONTATO
+       ========================================================================== -->
+  <section class="location-section" id="localizacao">
+    <div class="container">
+      <div class="location-grid">
+        <div class="location-info">
+          <div>
+            <div class="section-tag">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              Localização Institucional
+            </div>
+            <h2 class="heading-md">ENDEREÇO E <span class="text-accent">CONTATO</span></h2>
+          </div>
+
+          <div class="info-box">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="info-content">
+              <h4>Unidade Sapezal - MT</h4>
+              <p>Av. Jaue, nº 1200 - Centro, Sapezal - MT, CEP 78365-000</p>
+              <span style="font-size: 0.8rem; color: var(--brand-green-accent);">(Endereço oficial a ser confirmado com a recepção)</span>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div class="info-content">
+              <h4>Canais de Atendimento</h4>
+              <p>Telefone / WhatsApp: (65) 99999-9999</p>
+              <p>E-mail Institucional: recepcao@vo2fitnesssapezal.com.br</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrapper">
+          <!-- Google Maps Embed for Sapezal, MT -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31062.29828479262!2d-58.7758364!3d-13.5471415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a1c8db18ed5a2f%3A0x6b80327fbc16ef7b!2sSapezal%2C%20MT%2C%2078365-000!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa Oficial da Academia V.O2 Fitness Sapezal">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       RODAPÉ INSTITUCIONAL
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo-brand">
+            <img src="assets/images/logo.jpg" alt="Logo Academia V.O2 Fitness Sapezal">
+            <div class="logo-text">
+              V.O2 FITNESS
+              <span>SAPEZAL - MT</span>
+            </div>
+          </a>
+          <p>
+            Academia V.O2 Fitness Sapezal. Centro esportivo especializado em Musculação e Cross Training. Sapezal - MT.
+          </p>
+
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+
+            <a href="https://wa.me/5565999999999" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.03 14.69 2 12.04 2zm5.8 14.18c-.24.68-1.2 1.25-1.95 1.41-.51.11-1.18.2-3.44-.74-2.88-1.19-4.74-4.13-4.88-4.32-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .39.01.56.01.18 0 .42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.31.31-.13.62.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.15.49.13.67-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.71-.15.29.11 1.86.88 2.18 1.04.32.16.53.24.61.38.08.14.08.81-.16 1.49z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#horarios">Horários</a></li>
+            <li><a href="#planos">Planos & Valores</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Modalidades</h4>
+          <ul class="footer-links">
+            <li><a href="#modalidades">Musculação</a></li>
+            <li><a href="#modalidades">Cross Training</a></li>
+            <li><a href="#planos">Tabela de Planos</a></li>
+            <li><a href="#pre-cadastro">Pré-Matrícula</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <ul class="footer-links">
+            <li><span>📍 Av. Jaue, 1200 - Sapezal/MT</span></li>
+            <li><span>📱 (65) 99999-9999</span></li>
+            <li><span>⏰ Seg-Sex: 05h - 22h | Sáb: 08h - 16h</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Academia V.O2 Fitness Sapezal. Todos os direitos reservados.</div>
+        <div>Portal Oficial Institucional — Sapezal, MT</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BOTÃO FLUTUANTE DE WHATSAPP (FIXO)
+       ========================================================================== -->
+  <a href="https://wa.me/5565999999999?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Academia%20V.O2%20Fitness%20Sapezal!" 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Falar no WhatsApp Direct">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01C17.18 3.03 14.69 2 12.04 2zm5.8 14.18c-.24.68-1.2 1.25-1.95 1.41-.51.11-1.18.2-3.44-.74-2.88-1.19-4.74-4.13-4.88-4.32-.14-.19-1.18-1.57-1.18-2.99 0-1.42.74-2.12 1.01-2.41.27-.29.59-.36.79-.36.2 0 .39.01.56.01.18 0 .42-.07.66.5.24.58.82 2.01.89 2.16.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.17-.31.38-.45.51-.15.15-.31.31-.13.62.18.31.8 1.32 1.72 2.14 1.18 1.05 2.18 1.38 2.49 1.53.31.15.49.13.67-.08.18-.21.78-.91.99-1.22.21-.31.42-.26.71-.15.29.11 1.86.88 2.18 1.04.32.16.53.24.61.38.08.14.08.81-.16 1.49z"/>
+    </svg>
+  </a>
+
+  <!-- Script JS Principal -->
+  <script src="script.js"></script>
+</body>
+</html>
