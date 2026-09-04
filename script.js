@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const telefone = document.getElementById('form-telefone').value.trim();
       const modalidade = modalidadeSelect ? modalidadeSelect.value : 'Musculação';
       const plano = planoSelect ? planoSelect.value : 'Plano Mensal';
-      const turno = turnoSelect ? turnoSelect.value : 'Manhã (05h00 às 12h00)';
+      const turno = turnoSelect ? turnoSelect.value : 'Seg-Sex: Manhã (05h00 às 12h00)';
       const experiencia = experienciaSelect ? experienciaSelect.value : 'Iniciante';
 
       if (!nome || !telefone) {

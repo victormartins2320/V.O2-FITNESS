@@ -6,8 +6,8 @@
   
   <!-- SEO Meta Tags -->
   <title>Academia V.O2 Fitness Sapezal | Site Oficial</title>
-  <meta name="description" content="Site oficial da Academia V.O2 Fitness Sapezal - MT. Centro especializado em Musculação e Cross Training. Conheça nossa estrutura, horários, planos e faça sua pré-matrícula.">
-  <meta name="keywords" content="Academia V.O2 Fitness, Sapezal MT, Musculação Sapezal, Cross Training Sapezal, Academia Sapezal, Planos V.O2 Fitness">
+  <meta name="description" content="Site oficial da Academia V.O2 Fitness Sapezal - MT. Centro especializado em Musculação e Cross Training. Conheça nossa estrutura em vídeo, horários, planos e faça sua pré-matrícula.">
+  <meta name="keywords" content="Academia V.O2 Fitness, Sapezal MT, Musculação Sapezal, Cross Training Sapezal, Academia Sapezal, Planos V.O2 Fitness, Vídeo V.O2 Fitness">
   <meta name="robots" content="index, follow">
   
   <!-- Google Fonts -->
@@ -26,7 +26,7 @@
   <header class="header">
     <div class="container nav-wrapper">
       <a href="#home" class="logo-brand">
-        <!-- Logo Vetorial Inline SVG (Funciona em qualquer hospedagem/GitHub sem pasta assets) -->
+        <!-- Logo Vetorial Inline SVG -->
         <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="46" fill="#0B0E0C" stroke="#22c55e" stroke-width="3"/>
           <path d="M50 15 L78 32 L78 68 L50 85 L22 68 L22 32 Z" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.6"/>
@@ -43,6 +43,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#home" class="active">Início</a></li>
           <li><a href="#empresa">A Empresa</a></li>
+          <li><a href="#video-institucional">Vídeo Tour</a></li>
           <li><a href="#modalidades">Modalidades</a></li>
           <li><a href="#horarios">Horários</a></li>
           <li><a href="#planos">Planos & Valores</a></li>
@@ -65,14 +66,13 @@
   </header>
 
   <!-- ==========================================================================
-       HERO / APRESENTAÇÃO OFICIAL
+       HERO / APRESENTAÇÃO OFICIAL COM VÍDEO EM BACKGROUND (academiav2vsl.mp4)
        ========================================================================== -->
   <section class="hero" id="home">
-    <!-- Imagem de Fundo CDN + Fallback Local -->
-    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" 
-         onerror="this.onerror=null; this.src='assets/images/hero_bg.jpg';"
-         alt="Infraestrutura da Academia V.O2 Fitness Sapezal" 
-         class="hero-bg">
+    <!-- Vídeo Background em Loop Silencioso -->
+    <video class="hero-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop">
+      <source src="academiav2vsl.mp4" type="video/mp4">
+    </video>
     <div class="hero-overlay"></div>
 
     <div class="container">
@@ -96,8 +96,11 @@
             Conhecer Planos & Valores
           </a>
 
-          <a href="#pre-cadastro" class="btn btn-secondary">
-            Iniciar Pré-Matrícula Online
+          <a href="#video-institucional" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: currentColor;">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            Assistir ao Vídeo da Academia
           </a>
         </div>
 
@@ -133,8 +136,8 @@
               </svg>
             </div>
             <div class="hero-feature-text">
-              <strong>Horário Estendido</strong>
-              <span>Abertura oficial às 05:00h</span>
+              <strong>Aberto 7 Dias por Semana</strong>
+              <span>Seg-Sex 05h-22h | Sáb 07h-19h | Dom 08h-12h</span>
             </div>
           </div>
         </div>
@@ -207,6 +210,29 @@
   </section>
 
   <!-- ==========================================================================
+       SEÇÃO DE VÍDEO INSTITUCIONAL (PLAYER DEDICADO COM ÁUDIO/CONTROLES)
+       ========================================================================== -->
+  <section class="video-section" id="video-institucional">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-tag">
+          <svg viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+          Apresentação Oficial
+        </div>
+        <h2 class="heading-md">CONHEÇA A V.O2 FITNESS <span class="text-accent">EM VÍDEO</span></h2>
+        <p class="section-subtitle">Assista à apresentação oficial e acompanhe um tour pelas nossas áreas de treino em Sapezal - MT.</p>
+      </div>
+
+      <div class="video-player-container">
+        <video controls playsinline poster="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop">
+          <source src="academiav2vsl.mp4" type="video/mp4">
+          Seu navegador não suporta a execução de vídeos em HTML5.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
        HORÁRIOS DE FUNCIONAMENTO
        ========================================================================== -->
   <section class="schedule-banner-section" id="horarios">
@@ -215,28 +241,28 @@
         <div class="schedule-info-title">
           <div class="section-tag">
             <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-            Quadro de Horários
+            Quadro Oficial de Horários
           </div>
           <h3>Horários de <span class="text-accent">Funcionamento</span></h3>
           <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.4rem;">
-            Abertura diária logo no início da manhã para atender sua rotina de treinos.
+            Atendimento presencial e funcionamento das salas de treino em Sapezal - MT.
           </p>
         </div>
 
         <div class="schedule-table-grid">
           <div class="schedule-item">
-            <strong>Segunda a Sexta</strong>
+            <strong>Segunda a Sexta-feira</strong>
             <span>05:00h às 22:00h</span>
           </div>
 
           <div class="schedule-item">
             <strong>Sábados</strong>
-            <span>08:00h às 16:00h</span>
+            <span>07:00h às 19:00h</span>
           </div>
 
           <div class="schedule-item">
-            <strong>Domingos / Feriados</strong>
-            <span style="color: var(--text-muted); font-size: 1.1rem;">Fechado</span>
+            <strong>Domingos</strong>
+            <span>08:00h às 12:00h</span>
           </div>
         </div>
       </div>
@@ -291,7 +317,7 @@
               </li>
               <li>
                 <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                Supervisão de instrutores durante o horário de treino
+                Supervisão de instrutores durante todo o funcionamento
               </li>
             </ul>
 
@@ -504,13 +530,15 @@
               </select>
             </div>
 
-            <!-- Turno Preferencial -->
+            <!-- Turno / Horário Preferencial -->
             <div class="form-group">
               <label for="form-turno">Turno Preferencial de Treino</label>
               <select id="form-turno" class="form-control">
-                <option value="Manhã (05h00 às 12h00)">Manhã (05h00 às 12h00)</option>
-                <option value="Tarde (12h00 às 18h00)">Tarde (12h00 às 18h00)</option>
-                <option value="Noite (18h00 às 22h00)">Noite (18h00 às 22h00)</option>
+                <option value="Seg-Sex: Manhã (05h00 às 12h00)">Seg-Sex: Manhã (05h00 às 12h00)</option>
+                <option value="Seg-Sex: Tarde (12h00 às 18h00)">Seg-Sex: Tarde (12h00 às 18h00)</option>
+                <option value="Seg-Sex: Noite (18h00 às 22h00)">Seg-Sex: Noite (18h00 às 22h00)</option>
+                <option value="Sábados (07h00 às 19h00)">Sábados (07h00 às 19h00)</option>
+                <option value="Domingos (08h00 às 12h00)">Domingos (08h00 às 12h00)</option>
               </select>
             </div>
 
@@ -637,6 +665,7 @@
           <ul class="footer-links">
             <li><a href="#home">Início</a></li>
             <li><a href="#empresa">A Empresa</a></li>
+            <li><a href="#video-institucional">Vídeo Tour</a></li>
             <li><a href="#modalidades">Modalidades</a></li>
             <li><a href="#horarios">Horários</a></li>
             <li><a href="#planos">Planos & Valores</a></li>
@@ -658,7 +687,7 @@
           <ul class="footer-links">
             <li><span>📍 Av. Jaue, 1200 - Sapezal/MT</span></li>
             <li><span>📱 (65) 99999-9999</span></li>
-            <li><span>⏰ Seg-Sex: 05h - 22h | Sáb: 08h - 16h</span></li>
+            <li><span>⏰ Seg-Sex: 05h-22h | Sáb: 07h-19h | Dom: 08h-12h</span></li>
           </ul>
         </div>
       </div>

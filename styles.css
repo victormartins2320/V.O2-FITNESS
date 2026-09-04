@@ -56,7 +56,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img {
+img, video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -286,7 +286,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   5. Hero Section
+   5. Hero Section (com Suporte a Vídeo de Fundo)
    -------------------------------------------------------------------------- */
 .hero {
   position: relative;
@@ -305,7 +305,7 @@ button, input, select, textarea {
   height: 100%;
   z-index: -2;
   object-fit: cover;
-  filter: brightness(0.3) contrast(1.1);
+  filter: brightness(0.35) contrast(1.1);
 }
 
 .hero-overlay {
@@ -419,7 +419,34 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   6. Sobre a Empresa (Quem Somos)
+   6. Seção de Vídeo Player Institucional
+   -------------------------------------------------------------------------- */
+.video-section {
+  padding: 5rem 0;
+  background: var(--bg-dark-alt);
+  position: relative;
+}
+
+.video-player-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.video-player-container video {
+  width: 100%;
+  max-height: 540px;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   7. Sobre a Empresa (Quem Somos)
    -------------------------------------------------------------------------- */
 .about-section {
   padding: 5rem 0;
@@ -528,7 +555,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   7. Horários de Funcionamento (Seção Institucional)
+   8. Horários de Funcionamento (Seção Institucional)
    -------------------------------------------------------------------------- */
 .schedule-banner-section {
   padding: 3rem 0;
@@ -583,7 +610,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   8. Modalidades
+   9. Modalidades
    -------------------------------------------------------------------------- */
 .modalidades-section {
   padding: 5rem 0;
@@ -685,7 +712,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   9. Planos e Valores (Tabela Transparente)
+   10. Planos e Valores
    -------------------------------------------------------------------------- */
 .plans-section {
   padding: 5rem 0;
@@ -785,7 +812,7 @@ button, input, select, textarea {
 }
 
 /* --------------------------------------------------------------------------
-   10. Formulário de Pré-Matrícula Institucional
+   11. Formulário de Pré-Matrícula
    -------------------------------------------------------------------------- */
 .form-section {
   padding: 5rem 0;
@@ -870,7 +897,7 @@ select.form-control option {
 }
 
 /* --------------------------------------------------------------------------
-   11. Localização e Contato
+   12. Localização e Contato
    -------------------------------------------------------------------------- */
 .location-section {
   padding: 5rem 0;
@@ -942,7 +969,7 @@ select.form-control option {
 }
 
 /* --------------------------------------------------------------------------
-   12. Rodapé Institucional
+   13. Rodapé Institucional
    -------------------------------------------------------------------------- */
 .footer {
   background: #060807;
@@ -1031,7 +1058,7 @@ select.form-control option {
 }
 
 /* --------------------------------------------------------------------------
-   13. Botão Flutuante
+   14. Botão Flutuante
    -------------------------------------------------------------------------- */
 .floating-whatsapp {
   position: fixed;
@@ -1060,7 +1087,7 @@ select.form-control option {
 }
 
 /* --------------------------------------------------------------------------
-   14. Responsividade
+   15. Responsividade
    -------------------------------------------------------------------------- */
 @media (max-width: 992px) {
   .about-grid,
